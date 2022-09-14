@@ -21,10 +21,10 @@ class rulebutton(commands.Cog):
             role = interaction.guild.get_role(1008771067982131252)
             await interaction.user.add_roles(role)
             await interaction.response.send_message("You've accepted the rules, don't forget to <#916326482819842078> to unlock all channels", ephemeral=True) # Send a message when the button is clicked
-        button = discord.ui.Button(label="Discord ToS", style=discord.ButtonStyle.link, emoji="📗", url="https://discord.com/terms") # Create a button with the label ":sunglasses: Click me!" with color Blurple
+        @ui.button(label="Discord ToS", style=discord.ButtonStyle.primary, emoji="📗") # Create a button with the label ":sunglasses: Click me!" with color Blurple
         async def button_callback(self, interaction, button):
             await interaction.response.send_message("https://discord.com/terms", ephemeral=True) # Send a message when the button is clicked
-        @ui.button(label="Discord Community Guidelines", style=discord.ButtonStyle.link, emoji="📕")
+        @ui.button(label="Discord Community Guidelines", style=discord.ButtonStyle.primary, emoji="📕")
         async def communityGuidelines(self, interaction, button, url="https://discord.com/guidelines"):
             await interaction.response.send_message("https://discord.com/guidelines", ephemeral=True)
     
