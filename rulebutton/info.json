@@ -1,0 +1,19 @@
+{
+    "name": "Euphoric Rules Button",
+    "short": "RuleButton",
+    "description": "Cog responsible for making the button on the Rules Page",
+    "end_user_data_statement": "This cog does not persistently store data or meta-data about users.",
+    "install_msg": "Congrats",
+    "author": [
+        "Nado"
+    ],
+    "required_cogs": {},
+    "requirements": [],
+    "tags": [
+        "buttons"
+    ],
+    "min_bot_version": "3.3.10",
+    "hidden": false,
+    "disabled": false,
+    "type": "COG"
+}
