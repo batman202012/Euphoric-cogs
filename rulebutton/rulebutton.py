@@ -28,5 +28,6 @@ class rulebutton(commands.Cog):
         async def communityGuidelines(self, interaction, button, url="https://discord.com/guidelines"):
             await interaction.response.send_message("https://discord.com/guidelines", ephemeral=True)
     
+    @commands.hybrid_command(name="createmenu", with_app_command=True)
     async def create_menu(self, ctx):
         await ctx.send(view=rulebutton.MyView()) # Send a message with our View class that contains the button
